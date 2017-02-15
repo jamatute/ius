@@ -1,10 +1,12 @@
 ---
 # tasks file for ius
 - name: Install ius
+  become: True
   yum: 
     name=https://centos7.iuscommunity.org/ius-release.rpm
     state=present
 - name: Import ius key
+  become: True
   rpm_key:
     state=present
     key=/etc/pki/rpm-gpg/IUS-COMMUNITY-GPG-KEY

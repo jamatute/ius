@@ -1,19 +1,18 @@
-epel
-====
+# Ius
 
-Install ius
+Install ius based on the instructions of [setup.ius](https://setup.ius.io/)
 
-src: https://setup.ius.io/
-
-Example Playbook
-----------------
+## Example Playbook
 
 ```yaml
 - hosts: all
   roles:
     - ius
 ```
-License
--------
 
-GPL
+## License
+
+GPLv3
+
+## Author information
+jamatute (jamatute@paradigmadigital.com)
